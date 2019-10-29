@@ -6,13 +6,13 @@ namespace MVCApiCall.Models
 {
     public class Article
     {
-        public string Section { get; set; }
-        public string Title { get; set; }
-        public string Abstract { get; set; }
-        public string Url { get; set; }
-        public string Byline { get; set; }
-
-        public static List<Article> GetArticles(string apiKey)
+        public string Display_Title { get; set; }
+        public string MPAA_Rating { get; set; }
+        public string Headline { get; set; }
+        public string Summary_Short { get; set; }
+        public string Publication_Date { get; set; }
+        
+        public static List<Article> GetReviews(string apiKey)
         {
             var apiCallTask = ApiHelper.ApiCall(apiKey);
             var result = apiCallTask.Result;

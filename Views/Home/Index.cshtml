@@ -4,11 +4,11 @@
 @foreach (Article article in Model)
 {
     <ul>
-        <li>Section: @article.Section</li>
-        <li>Title: @article.Title</li>
-        <li>Abstract: @article.Abstract)</li>
-        <li>Url: @article.Url)</li>
-        <li>Byline: @article.Byline)</li>
+        <li>Title: @article.Display_Title</li>
+        <li>Rating: @article.MPAA_Rating</li>
+        <li>Headline: @article.Headline)</li>
+        <li>Summary: @article.Summary_Short)</li>
+        <li>Publication Date: @article.Publication_Date)</li>
     </ul>
     <br>
 }

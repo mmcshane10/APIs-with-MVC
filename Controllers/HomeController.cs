@@ -12,8 +12,8 @@ namespace MVCApiCall.Controllers
     {
         public IActionResult Index()
         {
-            var allArticles = Article.GetArticles(EnvironmentVariables.ApiKey);
-            return View(allArticles);
+            var allReviews = Article.GetReviews(EnvironmentVariables.ApiKey);
+            return View(allReviews);
         }
     }
 }
